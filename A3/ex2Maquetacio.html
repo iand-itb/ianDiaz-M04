@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex1Maquetacio</title>
+</head>
+<body>
+    <style>
+        .formdiv{
+            width: 100%;
+            display: flex;
+        }
+        #submit{
+            width: 50px;
+            margin-top: 10px;
+            margin-left: 34%;
+        }
+        #fmissatge{
+            height: 75px;
+        }
+        #formulari{
+            border: 2px solid rgba(0, 0, 0, 0.15);
+            border-radius: 10px;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            width: 500px;
+        }
+        .field{
+            border: 1px solid red;
+            display:flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+        .field label{
+            flex: 1;
+            text-align: right;
+            margin-right: 10px;
+        }
+        .field input, textarea{
+            flex: 2;
+        }
+
+
+    </style>
+    <div class="formdiv">
+        <div id="formulari">
+            <div class="field">
+                <label for="fnom">Nom: </label>
+                <input type="text" id="fnom" name="fnom"><br><br>
+            </div>
+            <div class="field">
+                <label for="fcorreu">Correu electrònic: </label>
+                <input type="text" id="fcorreu" name="fcorreu"><br><br>
+            </div>
+            <div class="field">
+                <label for="fmissatge">Missatge: </label>
+                <textarea id="fmissatge" name="fmissatge"></textarea><br><br>
+            </div>
+            <input id="submit" type="submit" value="Enviar">
+        </div>
+    </div>
+</body>
+</html>
